@@ -2,8 +2,8 @@ module Ransack
   module Nodes
     class Condition < Node
       i18n_word :attribute, :predicate, :combinator, :value
-      i18n_alias :a => :attribute, :p => :predicate,
-                 :m => :combinator, :v => :value
+      i18n_alias a: :attribute, p: :predicate,
+                 m: :combinator, v: :value
 
       attr_accessor :predicate
 

@@ -1,6 +1,5 @@
 require 'ransack/nodes'
 require 'ransack/context'
-require 'ransack/context'
 require 'ransack/naming'
 
 module Ransack
@@ -9,10 +8,10 @@ module Ransack
 
     attr_reader :base, :context
 
-    delegate :object, :klass, :to => :context
+    delegate :object, :klass, to: :context
     delegate :new_grouping, :new_condition,
              :build_grouping, :build_condition,
-             :translate, :to => :base
+             :translate, to: :base
 
     def initialize(object, params = {}, options = {})
       strip_whitespace = options.fetch(:strip_whitespace, Ransack.options[:strip_whitespace])

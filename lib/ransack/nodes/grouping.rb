@@ -7,7 +7,7 @@ module Ransack
       alias :m= :combinator=
 
       i18n_word :condition, :and, :or
-      i18n_alias :c => :condition, :n => :and, :o => :or
+      i18n_alias c: :condition, n: :and, o: :or
 
       delegate :each, :to => :values
 
